@@ -2,8 +2,8 @@
 # example C:\planilhas\Pasta1.xlsx turns C:/planilhas/Pasta1.xlsx
 from openpyxl import *
 
-sheet_of_solicitation = load_workbook('solicitação.xlsx') # carrega o arquivo excel de solicitação em uma variável
-sheet_of_reserve = load_workbook('reservas.xlsx') # carrega o arquivo excel de reserva em outra
+sheet_of_solicitation = load_workbook('C:/Meus Repositórios/planilhas do auto-xl/solicitação.xlsx') # carrega o arquivo excel de solicitação em uma variável
+sheet_of_reserve = load_workbook('C:/Meus Repositórios/planilhas do auto-xl/reservas.xlsx') # carrega o arquivo excel de reserva em outra
 
 sheet_tab_solicitation = sheet_of_solicitation.active # ativa a primeira planilha do arquivo de solicitação em outra variável
 
@@ -28,4 +28,4 @@ for cell in sheet_tab_solicitation['K']:
         case _:
             sheet_of_reserve = sheet_of_reserve.active
 
-sheet_of_reserve.save('reservas.xlsx')
+sheet_of_reserve.save('C:/Meus Repositórios/planilhas do auto-xl/reservas.xlsx')

@@ -1,6 +1,7 @@
 # to import workbooks from certain directories, use / in place of \
 # example C:\planilhas\Pasta1.xlsx turns C:/planilhas/Pasta1.xlsx
 from openpyxl import *
+from package.classes import Reserve
 
 sheet_of_solicitation = load_workbook('C:/Meus Repositórios/planilhas do auto-xl/solicitação.xlsx') # carrega o arquivo excel de solicitação em uma variável
 sheet_of_reserve = load_workbook('C:/Meus Repositórios/planilhas do auto-xl/reservas.xlsx') # carrega o arquivo excel de reserva em outra

@@ -13,9 +13,9 @@ sheet_tab_reserve = sheet_of_reserve.active
 
 # vai pegar na planilha a data de RETIRADA que está na coluna K, irá pegar o valor contido na célula
 # e irá separar cada elemento yyyy-mm-dd -> ['yyyy', 'mm', 'dd', ...]
-texto = str(sheet_tab_solicitation['K2'].value)
+text = str(sheet_tab_solicitation['K2'].value)
 delimeters = '[- ]'
-splited_date_pullout = re.split(delimeters, texto)
+splited_date_pullout = re.split(delimeters, text)
 
 # recebe os valores da lista com base no indice equivalente: index 2 sendo de dia, e index 1 sendo de mês.
 solicitation_day_pullout = splited_date_pullout[2]
@@ -23,8 +23,8 @@ solicitation_month_pullout = splited_date_pullout[1]
 
 # vai pegar na planilha a data de DEVOLUÇÃO que está na coluna L, irá pegar o valor contido na célula
 # e irá separar cada elemento yyyy-mm-dd -> ['yyyy', 'mm', 'dd', ...]
-texto = str(sheet_tab_solicitation['L2'].value)
-splited_date_devolution = re.split(delimeters, texto)
+text = str(sheet_tab_solicitation['L2'].value)
+splited_date_devolution = re.split(delimeters, text)
 
 # recebe os valores da lista com base no indice equivalente: index 2 sendo de dia, e index 1 sendo de mês.
 solicitation_day_devolution = splited_date_devolution[2]
